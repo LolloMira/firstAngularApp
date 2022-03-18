@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatInputModule } from '@angular/material/input'; 
 
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { DoneListComponent } from './components/wrapper/subComponents/done-list/done-list.component';
@@ -46,7 +49,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatExpansionModule,
     HttpClientModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

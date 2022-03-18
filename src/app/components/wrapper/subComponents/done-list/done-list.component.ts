@@ -18,4 +18,12 @@ export class DoneListComponent implements OnInit {
     this.apiS.getDoneTasks().subscribe(task => this.doneList = task);
   }
 
+  taskDelete(task: Task){
+    this.apiS.deleteTask(task.id).subscribe(b => {
+      if(!b){
+        prompt("errore nel backend");
+      }
+    })
+  }
+
 }
